@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+package phoneobject;
 
 public class Launcher {
     public static void main(String[] args) {
@@ -42,7 +41,7 @@ public class Launcher {
 
 //        System.out.println("brand "+xiaomi.brand+", price "+xiaomi.price+ ", number of cameras "+ meizu.camsAmount);
 //        System.out.println();
-//        Phone [] phones = new Phone[3];
+//        phoneobject.Phone [] phones = new phoneobject.Phone[3];
 //        phones[0] = xiaomi;
 //        phones[1] = iPhone;
 //        phones[2] = meizu;
@@ -51,12 +50,12 @@ public class Launcher {
 //
 //        Arrays.sort(phones, (a,b) -> (int) (a.price-b.price));
 //
-//        for (Phone phone : phones) {
+//        for (phoneobject.Phone phone : phones) {
 //            System.out.println("brand "+phone.brand+", price "+phone.price+ ", number of cameras "+ phone.camsAmount);
 //        }
 //        System.out.println();
 //
-//        ArrayList<Phone> phoneArrayList = new ArrayList<>();
+//        ArrayList<phoneobject.Phone> phoneArrayList = new ArrayList<>();
 //        phoneArrayList.add(xiaomi);
 //        phoneArrayList.add(meizu);
 //        System.out.println(phoneArrayList.get(1).brand);

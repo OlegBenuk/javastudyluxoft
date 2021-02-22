@@ -1,3 +1,5 @@
+package personwithobjects;
+
 public class Liver {
     String color;
     double weight;
@@ -23,7 +25,7 @@ public class Liver {
 
     @Override
     public String toString() {
-        return "Liver{" +
+        return "personwithobjects.Liver{" +
                 "color='" + color + '\'' +
                 ", weight=" + weight +
                 '}';

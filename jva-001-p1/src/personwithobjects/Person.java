@@ -1,3 +1,5 @@
+package personwithobjects;
+
 public class Person {
     Kidneys kidneys;
     Heart heart ;
@@ -32,7 +34,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person\n{" + kidneys +
+        return "personwithobjects.Person\n{" + kidneys +
                 ", \n" + heart +
                 ", \n" + liver +
                 '}';

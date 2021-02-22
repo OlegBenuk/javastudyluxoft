@@ -1,3 +1,5 @@
+package personwithobjects;
+
 public class Heart {
     int bitsPerMinute;
     double cost;
@@ -23,7 +25,7 @@ public class Heart {
 
     @Override
     public String toString() {
-        return "Heart{" +
+        return "personwithobjects.Heart{" +
                 "bitsPerMinute=" + bitsPerMinute +
                 ", cost=" + cost +
                 '}';

@@ -13,7 +13,7 @@ public class Launcher
         }
         catch (PersonNotFoundException e)
         {
-            System.out.println("Person " + e.getName() + " not found.");
+            System.out.println("personwithobjects.Person " + e.getName() + " not found.");
         }
         finally
         {

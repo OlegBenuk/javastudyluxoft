@@ -1,3 +1,5 @@
+package personwithobjects;
+
 public class Kidneys {
     int amount;
     int workCapacity;
@@ -23,7 +25,7 @@ public class Kidneys {
 
     @Override
     public String toString() {
-        return "Kidneys{" +
+        return "personwithobjects.Kidneys{" +
                 "amount=" + amount +
                 ", workCapacity=" + workCapacity +
                 '}';

@@ -1,3 +1,5 @@
+package phoneobject;
+
 public class Phone {
     boolean on;
     double price;
