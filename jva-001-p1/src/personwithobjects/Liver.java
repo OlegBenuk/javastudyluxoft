@@ -1,8 +1,8 @@
 package personwithobjects;
 
 public class Liver {
-    String color;
-    double weight;
+    private String color;
+    private double weight;
 
     public Liver() {
     }

@@ -1,8 +1,8 @@
 package personwithobjects;
 
 public class Kidneys {
-    int amount;
-    int workCapacity;
+    private int amount;
+    private int workCapacity;
 
     public Kidneys() {
     }

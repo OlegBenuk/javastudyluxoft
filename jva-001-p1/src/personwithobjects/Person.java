@@ -1,9 +1,9 @@
 package personwithobjects;
 
 public class Person {
-    Kidneys kidneys;
-    Heart heart ;
-    Liver liver;
+    private Kidneys kidneys;
+    private Heart heart ;
+    private Liver liver;
 
     public Person() {
     }

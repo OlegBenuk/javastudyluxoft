@@ -1,8 +1,8 @@
 package personwithobjects;
 
 public class Heart {
-    int bitsPerMinute;
-    double cost;
+    private int bitsPerMinute;
+    private double cost;
 
     public Heart() {
     }
