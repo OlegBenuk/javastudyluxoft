@@ -7,7 +7,8 @@ public class Launcher {
         Tree fruit = new FruitTree();
         Tree firTree = new FirTree();
         System.out.println(firTree instanceof Tree);
-        ArrayList<Tree> trees = new ArrayList<FirTree>();
+       // ArrayList<Tree> trees = new ArrayList<FirTree>();
+
 
         fruit.harvest();
         firTree.harvest();

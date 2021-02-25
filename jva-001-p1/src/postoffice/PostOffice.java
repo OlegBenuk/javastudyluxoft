@@ -18,13 +18,13 @@ public class PostOffice {
         this.letters = letters;
     }
 
-    public void sendLetter(Letter letter){
+    public void sendLetter(Letter letter) {
         letter.setStatus("Send");
         letters.add(letter);
         lettersSent++;
     }
 
-    public void deliverLetter(Letter letter){
+    public void deliverLetter(Letter letter) {
         letter.setStatus("Delivered");
         lettersDelivered++;
     }
@@ -37,31 +37,43 @@ public class PostOffice {
         return lettersDelivered;
     }
 
-    public ArrayList<Letter> getCopy(Person from, Person to){
-        if(from==null&&to==null) {
+    public ArrayList<Letter> getCopy(Person from, Person to) {
+        if (from == null && to == null) {
             return letters;
         }
 
-        ArrayList<Letter> copy = new ArrayList<>();
+        ArrayList<Letter> copy;
 
-        if(from == null){
-            for (Letter letter : copy) {
-                if(letter.getTo().equals(to)){
-                    copy.add(letter);
-                }
-            }
-        }
+            copy = getListLettersFromPerson(from);
+            copy = getListLettersToPerson(to, copy);
 
-        if(to == null){
-            for (Letter letter : copy) {
-                if(letter.getFrom().equals(from)){
-                    copy.add(letter);
-                }
-            }
-        }
+
         return copy;
     }
 
+    public ArrayList<Letter> getListLettersFromPerson(Person from) {
+        if(from==null) {return letters;}
+
+        ArrayList<Letter> copyFrom = new ArrayList<>();
+        for (Letter letter : letters) {
+            if (letter.getFrom().equals(from)) {
+                copyFrom.add(letter);
+            }
+        }
+        return copyFrom;
+    }
+
+    public ArrayList<Letter> getListLettersToPerson(Person to, ArrayList<Letter> list) {
+        if(to==null){return list;}
+
+        ArrayList<Letter> copyTo = new ArrayList<>();
+        for (Letter letter : list) {
+            if (letter.getTo().equals(to)) {
+                copyTo.add(letter);
+            }
+        }
+        return copyTo;
+    }
 
 
 }
