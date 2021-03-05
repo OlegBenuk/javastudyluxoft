@@ -4,7 +4,7 @@ import com.luxoft.jva001p1.generics.Product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Basket<T extends Product & Comparable<T>>
+public  class Basket<T extends Product & Comparable<T>>
 {
     List<T> products;
 

@@ -1,12 +1,18 @@
 package tv.buttons;
 
-import tv.Button;
 import tv.RemoteController;
 import tv.TV;
 
 public class VolPlus implements Button {
+
+    RemoteController remoteController;
+
+    public VolPlus(RemoteController remoteController) {
+        this.remoteController = remoteController;
+    }
+
     @Override
-    public void push(RemoteController remoteController) {
+    public void push() {
         int currentVolume = remoteController.currentVolume();
         if(currentVolume==TV.VOLUME_MAX){
             return;

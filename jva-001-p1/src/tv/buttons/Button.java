@@ -1,4 +1,4 @@
-package tv;
+package tv.buttons;
 
 public interface Button {
 

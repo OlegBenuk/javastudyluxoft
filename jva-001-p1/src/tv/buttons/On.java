@@ -1,12 +1,17 @@
 package tv.buttons;
 
-import tv.Button;
 import tv.RemoteController;
-import tv.TV;
 
 public class On implements Button {
+
+    RemoteController remoteController;
+
+    public On(RemoteController remoteController) {
+        this.remoteController = remoteController;
+    }
+
     @Override
-    public void push(RemoteController remoteController) {
+    public void push() {
         remoteController.switchOnOff(!remoteController.currentOnOff());
     }
 }

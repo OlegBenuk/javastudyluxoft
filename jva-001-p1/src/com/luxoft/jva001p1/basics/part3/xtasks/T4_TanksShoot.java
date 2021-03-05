@@ -14,7 +14,7 @@ public class T4_TanksShoot extends JPanel {
     final int BF_HEIGHT = 576;
 
     // 1 - top, 2 - right, 3 - down, 4 - left
-    int tankDirection = 1;
+    int tankDirection = 2;
 
     int tankX = 128;
     int tankY = 512;

@@ -1,5 +1,6 @@
 package tv;
 
+import tv.buttons.Button;
 import tv.buttons.ChannelNumber;
 import tv.buttons.On;
 import tv.buttons.VolPlus;
@@ -13,19 +14,18 @@ public class Launcher {
 
         System.out.println(tv);
 
-        Button on = new On();
-        on.push(remoteController);
+        Button on = new On(remoteController);
+        on.push();
 
         System.out.println(tv);
 
-        ButtonWithChannel channelTwo = new ChannelNumber();
-        channelTwo.pickChannel(2);
-        channelTwo.push(remoteController);
+        Button channelTwo = new ChannelNumber(5,remoteController);
+        channelTwo.push();
 
         System.out.println(tv);
 
-        Button increaseVolume = new VolPlus();
-        increaseVolume.push(remoteController);
+        Button increaseVolume = new VolPlus(remoteController);
+        increaseVolume.push();
 
         System.out.println(tv);
 
